@@ -9,12 +9,28 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        footerBackground: "url('/footer-background.jpg')"
       },
+      fontFamily: {
+        merriweather: ["Merriweather", "serif"]
+      },
+      colors: {
+        primary: "#c48222",
+        secondary: "#A76500",
+        grey: "#3d3e3e"
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: '175ch', // add required value here
+          }
+        }
+      }
+
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };
 export default config;
