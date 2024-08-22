@@ -36,7 +36,7 @@ const page = () => {
                                 Bar Associations at the High Court of Calcutta{" "}
                             </b>
                             and{" "}
-                            <b className="standout-text"> Alipur Judges' & Criminal Court</b>,
+                            <b className="standout-text"> Alipur Judges&apos; & Criminal Court</b>,
                             he brings unparalleled skill and dedication to his practice.
                         </p>
                     </div>
