@@ -3,7 +3,7 @@ import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar/Navbar'
 import React from 'react'
 
-const page = () => {
+const AchievmentPage = () => {
     return (
         <div>
             <Navbar />
@@ -15,4 +15,4 @@ const page = () => {
     )
 }
 
-export default page
+export default AchievmentPage

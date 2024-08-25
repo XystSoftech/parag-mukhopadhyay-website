@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import React from "react";
 import { publicationData } from "../../../data/publication";
 
-const page = () => {
+const PublicationPage = () => {
     function createMarkup(c: string) {
         return { __html: c };
     }
@@ -45,4 +45,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default PublicationPage;

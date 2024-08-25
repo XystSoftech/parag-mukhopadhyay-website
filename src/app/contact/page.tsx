@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar/Navbar'
 import React, { useState } from 'react'
 import { personalInfo } from '../../../data/personal-information'
 
-const page = () => {
+const ContactPage = () => {
     const [data, setData] = useState<{
         fname: string,
         lname: string,
@@ -67,4 +67,4 @@ const page = () => {
     )
 }
 
-export default page
+export default ContactPage

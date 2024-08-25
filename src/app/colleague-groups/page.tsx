@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar/Navbar'
 import { Avatar } from '@chakra-ui/react'
 import React from 'react'
 
-const page = () => {
+const ColleagueGroupPage = () => {
     return (
         <div>
             <Navbar />
@@ -34,4 +34,4 @@ const page = () => {
     )
 }
 
-export default page
+export default ColleagueGroupPage
