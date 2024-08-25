@@ -9,10 +9,15 @@ export const navLink = [
         "title": "About",
         "link": "/about"
     },
+    // {
+    //     "key": "achievements",
+    //     "title": "Achievements",
+    //     "link": "/achievements"
+    // },
     {
-        "key": "achievements",
-        "title": "Achievements",
-        "link": "/achievements"
+        "key": "practice-area",
+        "title": "Practice Area",
+        "link": "/practice-area"
     },
     {
         "key": "colleague-groups",
