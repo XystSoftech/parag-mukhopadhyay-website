@@ -3,7 +3,7 @@ import { navLink } from "../../data/navLinks";
 
 const Footer = () => {
   return (
-    <div className="bg-footerBackground bg-no-repeat bg-center bg-cover text-white/87 min-w-screen">
+    <div className="bg-footerBackground bg-no-repeat bg-center bg-cover text-white/87 min-w-screen ">
       <div className="side-margin">
         <div className="pt-6 md:pt-8 lg:pt-12 xl:pt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 lg:gap-12">
           <section className="flex flex-col justify-start items-start gap-5 text-white/70">

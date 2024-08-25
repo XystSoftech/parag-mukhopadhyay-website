@@ -28,10 +28,10 @@ const BlogsCard = ({
                 </div>
                 <hr className="my-2 h-2" />
                 <div>
-                    <h3 className="heading-secondary group-hover:text-blue-primary group-hover:cursor-pointer my-2">
+                    <h3 className="text-xl md:text-2xl font-semibold group-hover:text-blue-primary group-hover:cursor-pointer my-2">
                         {title}
                     </h3>
-                    <p className="my-2 paragraph line-clamp-2">
+                    <p className="my-2 paragraph line-clamp-2 text-black/70">
                         {brief}
                     </p>
                     <a

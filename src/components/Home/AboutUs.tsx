@@ -2,8 +2,8 @@ import React from "react";
 
 const AboutUs = () => {
     return (
-        <div>
-            <h2 className="heading-secondary text-center bottom-margin-content">
+        <div className="bottom-margin-content">
+            <h2 className="heading-secondary text-center mb-4">
                 Know Your <span className="heading text-primary">Advocate</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12 justify-center items-center" >
