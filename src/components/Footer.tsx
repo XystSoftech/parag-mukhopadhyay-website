@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="bg-footerBackground bg-no-repeat bg-center bg-cover text-white/87 min-w-screen ">
       <div className="side-margin">
-        <div className="pt-6 md:pt-8 lg:pt-12 xl:pt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 lg:gap-12">
+        <div className="pt-6 md:pt-8 lg:pt-12 xl:pt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-12">
           <section className="flex flex-col justify-start items-start gap-5 text-white/70">
             <img src="/logo2.png" className="h-20 lg:h-24" />
             <p className="text-sm leading-loose  text-justify">
@@ -38,12 +38,11 @@ const Footer = () => {
             </div>
           </section>
           <section className="text-white/70">
-            <h3 className="text-xl md:text-2xl font-bold">Publications</h3>
+            <h3 className="text-xl md:text-2xl font-bold">Publication</h3>
             <hr className="border-primary border-2 w-1/2 mt-2 mb-4" />
-          </section>
-          <section className="text-white/70">
-            <h3 className="text-xl md:text-2xl font-bold">Quick Links</h3>
-            <hr className="border-primary border-2 w-1/2 mt-2 mb-4" />
+            <div>
+              <a href={'/publication'} className="hover:text-primary">Publication</a>
+            </div>
           </section>
         </div>
         <hr className="border-1 border-white my-6 md:my-8 lg:my-12" />
