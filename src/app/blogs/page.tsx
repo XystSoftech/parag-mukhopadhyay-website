@@ -9,7 +9,7 @@ const BlogsPage = () => {
     return (
         <div>
             <Navbar />
-            <div className="side-margin min-h-[80vh] py-4 md:py-6 mt-20 md:mt-24">
+            <div className="side-margin py-6 md:py-8 bottom-margin-content">
             <h1 className="heading">
                     Blogs
                 </h1>
