@@ -18,8 +18,8 @@ export default function Home() {
         <AboutUs />
         <Publication/>
         {/* <LawyerPractise/> */}
-        <Contact/>
         <Blogs/>
+        <Contact/>    
       </div>
       <Footer />
       <ContactButton/>
