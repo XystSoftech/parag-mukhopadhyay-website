@@ -13,7 +13,9 @@ const HeroCarousel = () => {
                 navigation={false}
                 slidesPerView={1}
                 modules={[Navigation]}
-                autoplay
+                autoplay ={
+                   delay: 3000,
+                }
                 loop={true}
             >
                 <SwiperSlide>
