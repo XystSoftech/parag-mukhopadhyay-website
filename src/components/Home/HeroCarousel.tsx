@@ -2,7 +2,7 @@
 import React from "react";
 import { SwiperSlide, Swiper } from "swiper/react";
 import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import { motion } from "framer-motion";
 
@@ -12,10 +12,8 @@ const HeroCarousel = () => {
             <Swiper
                 navigation={false}
                 slidesPerView={1}
-                modules={[Navigation]}
-                autoplay ={
-                   delay: 3000,
-                }
+                modules={[Navigation, Autoplay]}
+                autoplay
                 loop={true}
             >
                 <SwiperSlide>
@@ -51,9 +49,9 @@ const HeroCarousel = () => {
                         <button className="btn-primary w-fit mt-6">Learn More <img src="/icons/arrow.png" className="h-4" /></button>
                     </div>
                 </SwiperSlide>
-             
+
             </Swiper>
-        </div>
+        </div >
     );
 };
 
