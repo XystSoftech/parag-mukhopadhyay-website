@@ -46,7 +46,7 @@ const HeroCarousel = () => {
                             Adv.Parag Mukhopadhyay,
                         </h1>
                         <h3 className="text-2xl">Your <b className="text-primary font-extrabold">Criminal Defense</b> Expert.</h3>
-                        <button className="btn-primary w-fit mt-6">Learn More <img src="/icons/arrow.png" className="h-4" /></button>
+                        <button className="btn-primary w-fit mt-6" onClick={()=> window.location.href = "/#about"}>Learn More <img src="/icons/arrow.png" className="h-4" /></button>
                     </div>
                 </SwiperSlide>
 
