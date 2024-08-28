@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutUs = () => {
     return (
-        <div className="bottom-margin-content">
+        <div className="bottom-margin-content" id="about">
             <h2 className="heading-secondary text-center mb-4">
                 Know Your <span className="heading text-primary">Advocate</span>
             </h2>
