@@ -12,7 +12,7 @@ const Publication = () => {
             insightful articles on contemporary legal issues and landmark case
             analyses.
           </p>
-          <a href="/pubication">
+          <a href="/publication">
             <button className="btn-primary hover:text-primary">
               Go to Publication
             </button>
