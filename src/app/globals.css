@@ -19,20 +19,16 @@
   .bottom-margin-content {
     @apply mb-6 md:mb-12 lg:mb-20;
   }
-  .standout-text{
+  .standout-text {
     @apply text-lg text-primary font-bold;
   }
 }
 
-.swiper-slide {
-  width: 100vw !important;
-  height: 84vh !important;
+.mySwiper {
+  width: 100%;
+  height: 84vh;
 }
 
-/* .swiper-slide img{
-  width: 100vw !important;
-} */
-
-.chakra-modal__content{
-  background-color: #A76500 !important;
+.chakra-modal__content {
+  background-color: #a76500 !important;
 }
