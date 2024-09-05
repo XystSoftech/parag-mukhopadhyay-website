@@ -145,7 +145,7 @@ const AboutPage = () => {
                             <section className="flex justify-start items-center">
                                 <span className="text-xl md:text-2xl font-bold text-primary mr-4">2019</span>
                                 <span className="font-bold mr-2 md:text-lg">Computer Hacking Forensic Investigation</span>
-                                <p className="md:text-lg">(EC-Council, Certification No. ECC0182437956)</p>
+                                <p className="md:text-lg">(EC-Council, New Mexico, USA, Certification No. ECC0182437956)</p>
                             </section>
                         </div>
 

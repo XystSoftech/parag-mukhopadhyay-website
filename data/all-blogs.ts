@@ -20,7 +20,7 @@ The principal of Hinduism and other religions in india value human life and adhe
 
       `,
     image:
-      "https://askusedu.com/blogdashboard/wp-content/uploads/2023/07/mba-after-law-llb.jpg",
+      "https://img.etimg.com/thumb/width-1600,height-900,imgsize-98364,resizemode-75,msid-102695810/news/india/new-bill-on-criminal-procedure-to-bring-changes-in-police-probe-trial-with-aid-of-technologies.jpg",
   },
   {
     id: "a3ee21a2-eaa2-4089-b395-39fb064ad250",

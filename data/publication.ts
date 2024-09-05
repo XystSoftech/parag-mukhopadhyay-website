@@ -1,4 +1,3 @@
-import Publication from "@/components/Home/Publication";
 
 export const publicationData = [{
     id: "9d75103e-52b2-489d-97bc-a2bbb42b9a50",
@@ -226,7 +225,9 @@ export const publicationData = [{
                 Future</em>. Journal of Dispute Resolution. Retrieved from Journal of Dispute Resolution</li>
     </ul>
     `,
-    downloadSrc: '/assets/technology-role-enhancing-efficiency-criminal-justice.pdf'
+    downloadSrc: '/assets/technology-role-enhancing-efficiency-criminal-justice.pdf',
+    certificateSrc: '/assets/technology-role-enhancing-efficiency-criminal-justice.png',
+    title: "TECHNOLOGY'S ROLE IN ENHANCING EFFICIENCY IN THE CRIMINAL JUSTICE SYSTEM"
 }, {
     id: "8c7a2197-baa2-494f-a92d-c6ad38682566",
     publication: `<h1 id="a-study-on-the-criminal-justice-system-in-india-need-of-reforms-regarding-the-policy-of-punishment-and-sentencing" style="color: #00aff0; text-align: center;">A STUDY ON THE CRIMINAL JUSTICE SYSTEM IN INDIA: NEED OF REFORMS REGARDING THE POLICY OF PUNISHMENT AND SENTENCING</h1>
@@ -338,5 +339,7 @@ Ultimately, while substantial progress has been made, the journey is far from co
 <li>LexForti. (2020). Comparative Study between Indian and Foreign Courts. Retrieved  from LexForti</li>
 </ul>
 `,
-    downloadSrc: "/assets/study-on-criminal-justice-system-india.pdf"
+    downloadSrc: "/assets/study-on-criminal-justice-system-india.pdf",
+    certificateSrc: "/assets/study-on-criminal-justice-system-india.png",
+    title: "A STUDY ON THE CRIMINAL JUSTICE SYSTEM IN INDIA: NEED OF REFORMS REGARDING THE POLICY OF PUNISHMENT AND SENTENCING"
 }]

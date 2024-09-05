@@ -12,7 +12,7 @@ const AboutUs = () => {
                         <span className="text-lg md:text-xl lg:text-2xl text-primary font-extrabold ">Parag Mukhopadhyay</span> is a distinguished advocate renowned for his
                         extensive expertise and comprehensive academic background. With
                         qualifications including <b className="italic">B.Sc., LL.M.</b>, and several specialized
-                        diplomas in <b className="italic">D.L.T., P.G.D.C.F.S., M.F.M., M.A. (Police Admn.), D.C.L., D.L.LA.L., P.G.D. P.M. & I.R., C.H.F.I.</b> Mr. Mukhopadhyay stands out as a leader in the legal field.
+                        such as in <b className="italic">D.L.T., P.G.D.C.F.S., M.F.M., M.A. (Police Admn.), D.C.L., D.L.LA.L., P.G.D. P.M. & I.R., C.H.F.I.</b> Mr. Mukhopadhyay stands out as a leader in the legal field.
                         As a <span className="standout-text">Senior Public Prosecutor,Government of West Bengal</span> and
                         an active member of the <b className="standout-text"> Bar Associations at the High Court of Calcutta </b>
                         and <b className="standout-text"> Alipur Judges&apos; & Criminal Court</b>, he brings unparalleled skill and

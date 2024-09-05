@@ -1,70 +1,145 @@
-"use client"
-import Footer from '@/components/Footer'
-import Navbar from '@/components/Navbar/Navbar'
-import React, { useState } from 'react'
-import { personalInfo } from '../../../data/personal-information'
+"use client";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar/Navbar";
+import React, { useState } from "react";
+import { personalInfo } from "../../../data/personal-information";
+import { FormControl, FormLabel, Input, Textarea } from "@chakra-ui/react";
 
 const ContactPage = () => {
-    const [data, setData] = useState<{
-        fname: string,
-        lname: string,
-        message: string
-    }>({
-        fname: '',
-        lname: '',
-        message: ''
-    })
+  const [data, setData] = useState<{
+    name: string;
+    address: string;
+    phoneNumber: string;
+    emailId: string;
+    message: string;
+  }>({
+    name: "",
+    address: "",
+    phoneNumber: "",
+    emailId: "",
+    message: "",
+  });
 
-    const handleSubmit = () => {
-        const url = `https://wa.me/91${personalInfo.whatsappNumber}?text=Hi, I am ${data.fname} ${data.lname},%0a${data.message}`
-        window.open(url, '_ blank');
+  const handleSubmit = () => {
+    const message = `Hello Mr. Parag Mukhopadhyay,
+
+My name is ${data.name}, and I am reaching out to you regarding a legal matter. Below are my contact details and the message I would like to convey:
+
+Name: ${data.name}  
+Address: ${data.address}
+Phone Number: ${data.phoneNumber} 
+Email ID: ${data.phoneNumber}
+
+Message:  
+${data.message}
+
+I would appreciate your assistance and look forward to your guidance in this matter.
+
+Thank you,  
+${data.name}
+`;
+    const url = `https://wa.me/${
+      personalInfo.whatsappNumber
+    }?text=${encodeURIComponent(message)}`;
+    window.open(url, "_ blank");
+  };
+
+  const handleInputChange = (e: any) => {
+    const { name, value } = e.target;
+    setData({
+      ...data,
+      [name]: value,
+    });
+  };
+
+  const validateInput = () => {
+    if (
+      (data.name === "" || data.emailId === "" || data.message === "" ||
+      data.phoneNumber === "" || data.address === "")
+    ) {
+      return false;
+    } else {
+      return true;
     }
+  };
 
-    const validateInput = () => {
-        if (data.fname === '' || data.lname === '' || data.message === '') {
-            return false
-        } else {
-            return true
-        }
-    }
-    return (
-        <div>
-            <Navbar />
-            <div className='side-margin py-6 md:py-8 bottom-margin-content'>
-                <h1 className="heading">
-                    Contact
-                </h1>
-                <hr className="border-2 border-primary mt-2 mb-4 md:w-3/4" />
-                <div className='grid grid-cols-1 md:grid-cols-2 gap-6 min-h-[50vh]'>
-                    <section className='hidden md:block'>
-                        <img src='/assets/contact.png' />
-                    </section>
-                    <section className='flex flex-col justify-center'>
-                        <form>
-                            <div className="grid md:grid-cols-2 md:gap-6">
-                                <div className="relative z-0 w-full mb-5 group">
-                                    <input onChange={(e) => setData({ ...data, fname: e.target.value })} value={data.fname} type="text" name="first Name" id="first Name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-secondary appearance-none focus:outline-none focus:ring-0 focus:border-black peer" placeholder=" " required />
-                                    <label htmlFor="floating_email" className="peer-focus:font-medium absolute text-sm text-gray-500  duration-300 transhtmlForm -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-black  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First Name</label>
-                                </div>
-                                <div className="relative z-0 w-full mb-5 group">
-                                    <input onChange={(e) => setData({ ...data, lname: e.target.value })} value={data.lname} type="text" name="last Name" id="last Name" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-secondary appearance-none focus:outline-none focus:ring-0 focus:border-black peer" placeholder=" " required />
-                                    <label htmlFor="floating_email" className="peer-focus:font-medium absolute text-sm text-gray-500  duration-300 transhtmlForm -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-black  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last Name</label>
-                                </div>
-                            </div>
-
-
-                            <div className="relative z-0 w-full mb-10 group">
-                                <input onChange={(e) => setData({ ...data, message: e.target.value })} value={data.message} type="text" name="message" id="message" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-secondary appearance-none focus:outline-none focus:ring-0 focus:border-black peer" placeholder=" " required />
-                                <label htmlFor="floating_email" className="peer-focus:font-medium absolute text-sm text-gray-500  duration-300 transhtmlForm -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-black  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Your Message</label>
-                            </div>
-                        </form>
-                        <button type="submit" className="btn-primary hover:text-primary" disabled={!validateInput()} onClick={handleSubmit}>Submit</button>
-                    </section>
-                </div>
-            </div>
-            <Footer />
+  return (
+    <div>
+      <Navbar />
+      <div className="side-margin py-6 md:py-8 bottom-margin-content">
+        <h1 className="heading">Contact</h1>
+        <hr className="border-2 border-primary mt-2 mb-4 md:w-3/4" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 min-h-[50vh]">
+          <section className="hidden md:block">
+            <img src="/assets/contact.png" />
+          </section>
+          <section className="flex flex-col justify-center">
+            <form className="flex flex-col gap-4" id="application-from">
+              <FormControl isRequired>
+                <FormLabel>Name</FormLabel>
+                <Input
+                  type="text"
+                  name="name"
+                  placeholder="Enter full name"
+                  value={data.name}
+                  onChange={handleInputChange}
+                />
+              </FormControl>
+              <FormControl isRequired>
+                <FormLabel>Email Id</FormLabel>
+                <Input
+                  type="email"
+                  name="emailId"
+                  placeholder="Enter Email Id"
+                  value={data.emailId}
+                  onChange={handleInputChange}
+                />
+              </FormControl>
+              <FormControl isRequired>
+                <FormLabel>Phone Number</FormLabel>
+                <Input
+                  type="text"
+                  name="phoneNumber"
+                  placeholder="Enter Phone Number"
+                  value={data.phoneNumber}
+                  onChange={handleInputChange}
+                />
+              </FormControl>
+              <FormControl isRequired>
+                <FormLabel>Address</FormLabel>
+                <Input
+                  type="text"
+                  name="address"
+                  placeholder="Enter Address"
+                  value={data.address}
+                  onChange={handleInputChange}
+                />
+              </FormControl>
+              <FormControl isRequired>
+                <FormLabel>Message</FormLabel>
+                <Textarea
+                  name="message"
+                  rows={3}
+                  placeholder="Enter Your message"
+                  value={data.message}
+                  onChange={handleInputChange}
+                />
+              </FormControl>
+              <button
+                type="submit"
+                className="btn-primary hover:text-primary"
+                disabled={!validateInput()}
+                onClick={handleSubmit}
+              >
+                Submit
+              </button>
+            </form>
+          </section>
         </div>
-    )
-}
+      </div>
+      <Footer />
+    </div>
+  );
+};
 
-export default ContactPage
+export default ContactPage;
