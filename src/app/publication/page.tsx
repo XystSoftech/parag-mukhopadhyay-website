@@ -22,7 +22,7 @@ const PublicationPage = () => {
                 <p className="text-lg mb-6">Read publications</p>
                 <div className="flex flex-col gap-3">
                 {
-                    publicationData.map((pub) => <a className="text-sm italic underline" href={`/publication/${pub.id}`}>{pub.title}</a>)
+                    publicationData.map((pub, i) => <a key={i} className="text-sm italic underline" href={`/publication/${pub.id}`}>{pub.title}</a>)
                 }
                 </div>
               
