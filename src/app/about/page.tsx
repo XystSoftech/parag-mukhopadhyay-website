@@ -19,9 +19,9 @@ const AboutPage = () => {
                                 Parag Mukhopadhyay
                             </span>{" "}
                             is a distinguished advocate renowned for his extensive expertise
-                            and comprehensive academic background. With qualifications
-                            including <b className="italic">B.Sc., LL.M.</b>, and several
-                            specialized such as in{" "}
+                            and comprehensive academic background, with qualifications
+                            viz <b className="italic">B.Sc., LL.M.</b>, and several
+                            specialization such as in{" "}
                             <b className="italic">
                                 D.L.T., P.G.D.C.F.S., M.F.M., M.A. (Police Admn.), D.C.L.,
                                 D.L.LA.L., P.G.D. P.M. & I.R., C.H.F.I.
