@@ -28,6 +28,7 @@ const AboutUs = () => {
                         <b className="standout-text"> Alipur Judges&apos; & Criminal Court</b>,
                         he brings unparalleled skill and dedication to his practice.
                     </p>
+                    
                     <button className="btn-primary hover:text-black" onClick={() => window.location.href = "/about"}>Learn More</button>
                 </div>
 
