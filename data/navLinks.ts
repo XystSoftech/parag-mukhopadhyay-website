@@ -21,7 +21,7 @@ export const navLink = [
     },
     {
         "key": "colleague-groups",
-        "title": "Colleague Groups",
+        "title": "Associate Groups",
         "link": "/colleague-groups"
     },
     {
