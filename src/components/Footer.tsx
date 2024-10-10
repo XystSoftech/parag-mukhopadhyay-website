@@ -9,8 +9,7 @@ const Footer = () => {
           <section className="flex flex-col justify-start items-start gap-5 text-white/70">
             <img src="/logo2.png" className="h-20 lg:h-24" />
             <p className="text-sm leading-loose  text-justify">
-              Advocate Parag Mukhopadhyay, a distinguished criminal lawyer and Bar
-              Council member, excels in justice advocacy.
+              Advocate Parag Mukhopadhyay, a distinguished criminal lawyer, excels in justice advocacy.
             </p>
             <div className="flex justify-start items-center gap-3 text-sm">
               <img src="/icons/location.png" className="w-8" />

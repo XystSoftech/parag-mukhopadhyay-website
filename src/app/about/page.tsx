@@ -26,12 +26,12 @@ const AboutPage = () => {
                                 D.L.T., P.G.D.C.F.S., M.F.M., M.A. (Police Admn.), D.C.L.,
                                 D.L.LA.L., P.G.D. P.M. & I.R., C.H.F.I.
                             </b>{" "}
-                            Mr. Mukhopadhyay stands out as a leader in the legal field. As a{" "}
+                            Mr. Mukhopadhyay stands out as a leader in the legal fiel in{" "}
                             <span className="standout-text">
-                                Senior Public Prosecutor,Government of West Bengal
+                            High Court  , District Courts and Criminal Courts. In india.
                             </span>{" "}
                             and{" "}
-                            <b className="standout-text"> Alipur Judges&apos; & Criminal Court</b>,
+
                             he brings unparalleled skill and dedication to his practice.
                         </p>
                     </div>

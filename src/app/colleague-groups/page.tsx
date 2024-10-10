@@ -19,7 +19,7 @@ const ColleagueGroupPage = () => {
                         <Avatar src='/icons/advocate.png' />
                         <div>
                             <h3 className="text-lg md:text-xl lg:text-2xl font-semibold mb-2">Advocate Susandip Pathak</h3>
-                            <p>He used to contribute knowledge of civil law as well as consumer forum laws.
+                            <p>He used to contribute knowledge of civil laws as well as consumer forum laws.
                             </p>
                         </div>
                     </li>
@@ -27,14 +27,14 @@ const ColleagueGroupPage = () => {
                         <Avatar src='/icons/advocate.png' />
                         <div>
                             <h3 className="text-lg md:text-xl lg:text-2xl font-semibold mb-2">Advocate Subir Ranjan Chakraborty</h3>
-                            He used to share his knowledge on criminal law and miscellaneous affairs.
+                            He used to share his knowledge on criminal laws and miscellaneous affairs.
                         </div>
                     </li>
                     <li className="flex items-center space-x-4 p-4 border-2 border-primary rounded-lg shadow-sm hover:bg-primary/10 transition-colors duration-200 w-full">
                         <Avatar src='/icons/advocate.png' />
                         <div>
                             <h3 className="text-lg md:text-xl lg:text-2xl font-semibold mb-2">Advocate Suprakash Dhar</h3>
-                            <p> he used to contribute his knowledge regarding the laws relating to industrial, labour and company affairs.</p>
+                            <p> He used to contribute his knowledge regarding the laws relating to industrial, labour and company affairs.</p>
                         </div>
                     </li>
                 </div>
