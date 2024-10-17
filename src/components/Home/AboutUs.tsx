@@ -20,11 +20,11 @@ const AboutUs = () => {
                              D.L.T., P.G.D.C.F.S., M.F.M., M.A. (Police Admn.), D.C.L.,
                             D.L.LA.L., P.G.D. P.M. & I.R., C.H.F.I.
                         </b>{" "}
-                        Mr. Mukhopadhyay stands out as a leader in the legal field respected of
+                        Mr. Mukhopadhyay stands out as a leader in the legal field respected of{" "}
                         <span className="standout-text">
-                            High Court, District Courts and Criminal Courts. In India
+                            High Court, District Courts and Criminal Courts in India
                     </span>
-                         he brings unparalleled skill and dedication to his practice.
+                    {" "}he brings unparalleled skill and dedication to his practice.
                     </p>
 
                     <button className="btn-primary hover:text-black" onClick={() => window.location.href = "/about"}>Learn More</button>
