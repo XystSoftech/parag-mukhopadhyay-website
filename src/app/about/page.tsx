@@ -26,9 +26,9 @@ const AboutPage = () => {
                                 D.L.T., P.G.D.C.F.S., M.F.M., M.A. (Police Admn.), D.C.L.,
                                 D.L.LA.L., P.G.D. P.M. & I.R., C.H.F.I.
                             </b>{" "}
-                            Mr. Mukhopadhyay stands out as a leader in the legal fiel in{" "}
+                            Mr. Mukhopadhyay stands out as a leader in the legal field in{" "}
                             <span className="standout-text">
-                            High Court  , District Courts and Criminal Courts. In india.
+                                High Courts, District Courts and Criminal Courts. In India
                             </span>{" "}
                             and{" "}
 

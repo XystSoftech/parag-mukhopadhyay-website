@@ -15,16 +15,16 @@ const AboutUs = () => {
                         is a distinguished advocate renowned for his extensive expertise
                         and comprehensive academic background, with qualifications
                         viz <b className="italic">B.Sc., LL.M.</b>, and several
-                        specialization such as in{" "}
+                        specialization such as in 
                         <b className="italic">
-                            D.L.T., P.G.D.C.F.S., M.F.M., M.A. (Police Admn.), D.C.L.,
+                             D.L.T., P.G.D.C.F.S., M.F.M., M.A. (Police Admn.), D.C.L.,
                             D.L.LA.L., P.G.D. P.M. & I.R., C.H.F.I.
                         </b>{" "}
                         Mr. Mukhopadhyay stands out as a leader in the legal field in
                         <span className="standout-text">
-                            High Court  , District Courts and Criminal Courts. In india
-                        </span>
-                        he brings unparalleled skill and dedication to his practice.
+                            High Court, District Courts and Criminal Courts. In India
+                    </span>
+                         he brings unparalleled skill and dedication to his practice.
                     </p>
 
                     <button className="btn-primary hover:text-black" onClick={() => window.location.href = "/about"}>Learn More</button>
