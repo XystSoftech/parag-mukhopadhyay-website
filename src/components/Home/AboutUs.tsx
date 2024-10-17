@@ -22,7 +22,7 @@ const AboutUs = () => {
                         </b>{" "}
                         Mr. Mukhopadhyay stands out as a leader in the legal field respected of{" "}
                         <span className="standout-text">
-                            High Court, District Courts and Criminal Courts in India
+                            High Courts, District Courts and Criminal Courts in India
                     </span>
                     {" "}he brings unparalleled skill and dedication to his practice.
                     </p>
